@@ -1,0 +1,17 @@
+{
+  "name": "Lingr Notification",
+  "version": "1",
+  "description": "The notification of Lingr is displayed.",
+  "content_scripts": [
+  {
+    "all_frames": false,
+    "js": [ "jquery-1.6.0.min.js", "app.js", "Lingr.js"],
+    "matches": [ "http://*/*", "https://*/*", "file:///*", "http://lingr.com/*"],
+    "run_at": "document_end"
+   }
+  ],
+  "icons": {"16": "16.png", "48": "48.png", "128": "128.png"},
+  "permissions": ["tabs", "notifications", "http://lingr.com/*"],
+  "options_page": "options.html",
+  "background_page": "background.html"
+}

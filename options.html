@@ -1,0 +1,50 @@
+<script src="option.js"></script>
+<title>Lingr Notification</title>
+<style>
+  body {
+    margin: 10px;
+    font: 84% Arial, sans-serif
+  }
+
+  h1 { font-size: 156% }
+
+  h1 img {
+    margin: 1px 5px 0 1px;
+    vertical-align: middle
+  }
+
+  h2 {
+    border-top: 1px solid #9cc2ef;
+    background-color: #ebeff9;
+    padding: 3px 5px;
+    font-size: 100%
+  }
+</style>
+<h1>
+  <img src="64.png" alt="Toast">
+  Lingr Notification
+</h1>
+<h2>Options</h2>
+<div id="message" style="color:white;">Don't Login...</div>
+<form id="options">
+  Email or username<input id="user" type="text" name="user"><br/>
+  Password<input id="password" type="password" name="password"><br/>
+  Display time
+  <select name="seconds">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>10</option>
+    <option>15</option>
+    <option>20</option>
+    <option>25</option>
+    <option>30</option>
+  </select>
+  second(s).<br/>
+  is Active <input type="checkbox" name="isActive"><br />
+  <button onclick="save();">Save</button>
+  <button onclick="init();">Reset</button>
+  <button onclick="restart();">Restart</button>
+</form>
