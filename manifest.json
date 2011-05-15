@@ -1,6 +1,6 @@
 {
-  "name": "Lingr Notification",
-  "version": "1",
+  "name": "Lingr Notify",
+  "version": "0.1",
   "description": "The notification of Lingr is displayed.",
   "content_scripts": [
   {
